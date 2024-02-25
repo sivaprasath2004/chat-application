@@ -1,0 +1,32 @@
+#sender{
+    position: relative;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+}
+#sender::after{
+    content: "";
+     position: absolute;
+     background-color: rgb(181, 189, 189);
+     height: 5px;
+     width: 15px;
+     bottom: 0px;
+     right: -5px;
+     border-radius: 10px;
+}
+#Receiver{
+position: relative;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px ;
+}
+#Receiver::after{
+content: "";
+ position: absolute;
+ background-color: lightseagreen;
+ height: 5px;
+ width: 15px;
+ top: 0px;
+ left: -5px;
+ border-radius: 10px;
+}
