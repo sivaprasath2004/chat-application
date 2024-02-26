@@ -71,3 +71,37 @@ text-decoration:underline ;
   font-weight: 900;
 
 }
+#background{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  top: -20%;
+  left: -30%;
+  background-color: #017143;
+  z-index: -1;
+  rotate: 15deg;
+}
+#background::before{
+  content: "";
+  position: absolute;
+  height: 93%;
+  width: 89%;
+  border-radius: 50%;
+  right:-250%;
+  top:-50%;
+  background-color: black;
+  z-index: -1;
+  rotate: 30deg;
+}
+/* #background::after{
+  content: "";
+  position: absolute;
+  height: 93%;
+  width: 93%;
+  top: 0%;
+  left: 2%;
+  background-color: #017143;
+  z-index: -1;
+  rotate: -55deg;
+} */
