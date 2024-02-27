@@ -30,7 +30,6 @@ const Chat = () => {
   useEffect(()=>{
     socket.on('message',msg=>{
       setMessage(pre=>[...pre,msg])
-      console.log(JSON.stringify(msg))
     })
   },[])
   function handleKeyPress(event){
@@ -43,12 +42,16 @@ const Chat = () => {
     }
   }
 }
+
   return (
     <div style={{display:'flex',position:'relative',flexDirection:'column',height:'100vh',width:'100%'}}>
-      <div style={{height:40,width:'100%',left:0,backgroundColor:'black',display:'flex',flexDirection:'row',justifyContent:'space-between',position:'fixed',top:0}}><h1 style={{color:'white',fontSize:22}}>{user.name===undefined?'NewUser':user.name}</h1>
+      
+      <div style={{height:50,width:'100%',left:0,backgroundColor:'black',display:'flex',gap:20,flexDirection:'row',justifyContent:'flex-start',alignItems:'center',position:'fixed',top:0}}>
+      <img style={{height:30,width:30,paddingLeft:10,filter:'invert(1)'}} src='https://cdn-icons-png.flaticon.com/128/64/64572.png' alt='user' />
+        <h1 style={{color:'white',fontSize:22}}>{user.name===undefined?'NewUser':user.name}</h1>
       </div>
       <div  style={{display:'flex',flexWrap:'wrap',height:'100%',position:'relative'}}>
-      <div ref={containerRef} style={{height:'85%',overflowX:'hidden',width:'100%',left:0,marginTop:14,overflowY:'scroll',position:'fixed'}}>
+      <div ref={containerRef} style={{height:'82%',overflowX:'hidden',width:'100%',left:0,marginTop:50,overflowY:'scroll',position:'fixed'}}>
       {
           message.map((item,index)=>(
             <div key={`parent${index}`} style={{display:'flex',margin:20,justifyContent:item.user==="admin"?'center':item.user===user.name?'right':'left'}}>

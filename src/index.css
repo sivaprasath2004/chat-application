@@ -92,8 +92,8 @@ text-decoration:underline ;
   z-index: -1;
   border-radius: 12px;
   background-color: #017143;
-  box-shadow: 0 12px 12px 45rem rgba(37, 28, 28,0.5);
-  border: none;
+  box-shadow: 0 0px 0px 45rem gray;
+  border: 1px solid #017143;
   border-radius: 12px;
 }
 #background_circle *{
@@ -136,30 +136,50 @@ text-decoration:underline ;
 position: absolute;
 top: 0%;
 }
-.form .name{
+.form .name,.room,.Full{
   position: absolute;
-  top: 40%;
   border: none;
   width: 70%;
   border-bottom: 2px solid black;
   background-color: transparent;
   font-size: 1.5rem;
 }
+.form .name{
+  top: 30%;
+}
+.form #name{
+  top: 40%;
+}
+.form .Full{
+  top: 45%;
+}
 .form .room{
-  position: absolute;
   top: 60%;
-  border: none;
-  width: 70%;
-  border-bottom: 2px solid black;
-  background-color: transparent;
-  font-size: 1.5rem;
+}
+.form #room{
+  top: 60%;
 }
 .form a{
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 80%;
+  top: 90%;
+}
+.form p{
+  width: 70%;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  font-size: .8rem;
+}
+.form p button{
+  border: none;
+  background-color: transparent;
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
 }
 .form a input{
   height: 40px;
@@ -205,12 +225,11 @@ input:focus{
     height: 400px;
     background-color: white;
   }
-  .form .room,.form .name{
+  .form .room,.form .name,.form .Full{
     font-size: 1rem;
   }
   .form a input{
     width: 120px;
     font-size: 1.2rem;
   }
-  
 }
