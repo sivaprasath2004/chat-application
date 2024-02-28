@@ -64,10 +64,10 @@ function time(){
       {
           message.map((item,index)=>(
             <div key={`parent${index}`} style={{display:'flex',margin:20,justifyContent:item.user==="admin"?'center':item.user===user.name?'right':'left'}}>
-            <h2 key={index} style={{width:item.text.length>4?'none':30,maxWidth:item.user==="admin"?'90%':'60%',height:'auto',fontSize:item.user==='admin'?13:14,color:item.user==="admin" && item.text.split('join')[1]===undefined?"red":item.user==="admin"?'green':'black',backgroundColor:item.user==="admin"?'transparent':item.user===user.name?'rgb(181, 189, 189)':'lightseagreen',wordWrap:'break-word',padding:10,boxShadow:item.user==="admin"?'none':'0 2px 10px rgba(0,0,0,0.5)',borderRadius:10,position:'relative'}} id={item.user==="admin"?'NoChange':item.user===user.name?'sender':'Receiver'}>{item.text}<span key={`time${index}`} style={{position:'absolute',bottom:2,right:item.user==='admin'?'40%':'10%',zIndex:2,fontSize:8}}>{item.time}</span></h2>
+            <h2 key={index} style={{width:item.text.length>4?'none':30,maxWidth:item.user==="admin"?'90%':'60%',height:'auto',fontSize:item.user==='admin'?13:14,color:item.user==="admin" && item.text.split('join')[1]===undefined?"red":item.user==="admin"?'green':'black',backgroundColor:item.user==="admin"?'transparent':item.user===user.name?'rgb(181, 189, 189)':'lightseagreen',wordWrap:'break-word',padding:10,borderRadius:10,position:'relative'}} id={item.user==="admin"?'NoChange':item.user===user.name?'sender':'Receiver'}>{item.text}<span key={`time${index}`} style={{position:'absolute',bottom:2,right:item.user==='admin'?'40%':'10%',zIndex:2,fontSize:8}}>{item.time}</span></h2>
         </div>
         ))}
-<div style={{borderRadius:5,bottom:'2%',left:'1%',right:'1%',minHeight:40,width:'98%',backgroundColor:'whitesmoke',border:'1px solid black',position:'fixed',display:'flex',justifyContent:'center',alignItems:'center'}}>
+<div style={{bottom:'2%',left:'1%',right:'1%',minHeight:40,width:'98%',backgroundColor:'whitesmoke',borderRadius:25,position:'fixed',display:'flex',justifyContent:'center',alignItems:'center',boxShadow:'0 2px 12px rgba(0,0,0,0.5)'}}>
 <input
 style={{height:'95%',width:'100%',backgroundColor:'transparent',fontSize:15,marginLeft:10,marginRight:10,border:'none'}}
 type='text'
@@ -77,7 +77,7 @@ onChange={e=>setUser(pre=>({...pre,sendMes:e.target.value}))}
 onKeyPress={handleKeyPress}
 />
 <div style={{height:'100%',border:'none',display:'flex',justifyContent:'center',alignItems:'center'}}>
-  <button style={{backgroundColor:'black',minHeight:40,border:'none',display:'flex',justifyContent:'center',alignItems:'center'}} onClick={()=>handleKeyPress({key:'Enter'})}><img src='https://cdn-icons-png.flaticon.com/128/11049/11049074.png' style={{height:30,rotate:'45deg',width:30,objectFit:'contain'}} alt='send' /></button>
+  <button style={{backgroundColor:'black',minHeight:35,minWidth:35,marginRight:10,border:'none',borderRadius:'50%',display:'flex',justifyContent:'center',alignItems:'center'}} onClick={()=>handleKeyPress({key:'Enter'})}><img src='https://cdn-icons-png.flaticon.com/128/11049/11049074.png' style={{height:25,rotate:'35deg',width:25,objectFit:'contain'}} alt='send' /></button>
 </div>
 
 </div>
