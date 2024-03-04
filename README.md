@@ -31,18 +31,13 @@ This project focuses on enabling users to have private conversations in real-tim
    ```
    cd frontend
    npm install
-   cd ../backend
-   npm install
    ```
-3. Start the frontend and backend servers:
+3. Start the frontend:
    ```
    cd frontend
    npm start
    ```
-   ```
-   cd backend
-   npm start
-   ```
+   
 
 ## Usage
 
