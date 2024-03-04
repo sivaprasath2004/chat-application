@@ -26,7 +26,7 @@ This project focuses on enabling users to have private conversations in real-tim
   
 ## Installation
 
-1. Clone the repository: `git clone `
+1. Clone the repository: `git clone https://github.com/sivaprasath2004/chat-application.git`
 2. Install dependencies for both frontend and backend:
    ```
    cd frontend
