@@ -52,4 +52,4 @@ Contributions are welcome! Please fork the repository, make changes, and submit 
 
 ## Contact
 
-For any inquiries, please contact [Your Name](mailto:prasathsiva2004@gmail.com).
+For any inquiries, please contact [Sivaprasath](mailto:prasathsiva2004@gmail.com).
